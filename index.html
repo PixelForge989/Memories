@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Anniversary Proposal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background: linear-gradient(to right, pink, lightblue);
+            text-align: center;
+            padding: 50px;
+            border-bottom: 5px solid #ff69b4;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .timeline, .photo-gallery, .love-letter {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .timeline:hover, .photo-gallery:hover, .love-letter:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: pink;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy 2nd Anniversary!</h1>
+        <p>Marking two years of togetherness!</p>
+    </header>
+    <div class="timeline">
+        <p>Click to view the timeline of our beautiful moments together...</p>
+        <h2><a href="memories.jpg">Sweet Indulgence</a></h2>
+    </div>
+    <div class="photo-gallery">
+         <p>Click each to view our cherished memories...</p>
+        <h2><a href="sanower.img1.jpg">Cutie pie</a></h2>
+        <h3><a href="couble time.jpg">Love in Frame</a></h3>
+        <h4><a href="late night conversation.jpg">Midnight Talks </a></h4>
+       
+    </div>
+    <div class="love-letter">
+        
+        <p>Click to read your heartfelt message...</p>
+        <h2><a href="love letter.jpg">A Love Letter</a></h2>
+
+    </div>
+    <footer>
+        <p>Background music will play here.</p>
+    </footer>
+    <script>
+        const audio = new Audio('background-music.mp3');
+        audio.play();
+
+        document.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
